@@ -4,6 +4,11 @@
     --heading-text-color: #212121;/* Текст заголовка */
     --main-text-color: #757575;   /* Текст */
     --main-white-color: #ffffff;  /* просто білий колір */
+    --black-color:#000000;        /* просто чорний колір */
+    --fotter-background-color:#2F303A; /*колір футера*/
+    --contact-link-color:rgba(255, 255, 255, 0.6); /*контакти в футері*/
+    --button-main-color:#188CE8;   /*кнопка на головній*/
+    --button-filter-color:#F5F4FA; /*кнопки в портфоліо*/
 }
 
 body {
@@ -24,8 +29,8 @@ body {
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
-    color: #000000;
+    line-height: 1.19;
+    color:var(--black-color);
     text-decoration: none;   
 }
 .logo--alt {
@@ -48,6 +53,10 @@ body {
     text-decoration: none;
 }
 
+.site-nav .link-adr{
+    color: var(--main-text-color);
+}
+
 .link-nav:hover, .link-nav:focus,
 .link-adr:hover, .link-adr:focus,
 .link-cont:hover, .link-cont:focus,
@@ -64,7 +73,7 @@ body {
     color: var(--main-white-color);
     text-transform: uppercase;
     text-align: center;
-    background-color: #2F303A; /*щоб текст побачити*/  
+    background-color:var(--fotter-background-color); /*щоб текст побачити*/  
 }
 
 .btn {
@@ -74,7 +83,7 @@ body {
     line-height: 1.87;
     letter-spacing: 0.06em;
     color: var(--main-white-color);
-    background-color: #188CE8;
+    background-color:var(--button-main-color) ;
     border-radius: 5px;
     border: none;
     cursor: pointer;
@@ -82,8 +91,8 @@ body {
 
 .btn:hover,
 .btn:focus {
-    background-color: var(--decoration-color);
     color: var(--main-white-color);
+    background-color: var(--decoration-color);
 }
 
 .list .btn {
@@ -91,7 +100,7 @@ body {
     line-height: 1.62;
     letter-spacing: 0.03em;
     color: var(--heading-text-color);
-    background-color: #F5F4FA;
+    background-color:var(--button-filter-color) ;
 }
 
 .list .btn:hover,
@@ -107,15 +116,29 @@ body {
     color: var(--heading-text-color);
 }
 .title-hide {
-    display: none;
+    pointer-events: none;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
+.features {
+    line-height: 1.15;
+}
 .features .title {
+   font-size: inherit; 
    color: var(--heading-text-color); 
 }
 
 .features .text {
-    line-height:1.71;
+    line-height:1.72;
 }
 
 .team {
@@ -124,6 +147,7 @@ body {
 }
 
 .team .title {
+    font-size: inherit;
     font-weight: 500;
     color: var(--heading-text-color);
 }
@@ -132,7 +156,7 @@ body {
 
 .site-adr {
     font-style: normal;
-    line-height: 1.71;
+    line-height: 1.72;
 }
 
 .link-adr {
@@ -141,7 +165,7 @@ body {
 }
 
 .link-cont {
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--contact-link-color);
     text-decoration: none;
 }
 
@@ -159,6 +183,6 @@ body {
 
 /*=======  footer  ======*/
 .page-footer {
-    background-color: #2F303A;
+    background-color: var(--fotter-background-color);
 }
 
