@@ -100,10 +100,6 @@ body {
     background-color: var(--decoration-color);
 }
 
-.list .button:active {
-    background-color: #188CE8;
-}
-
 .section-title {
     font-size: 36px;
     line-height: 1.17;
