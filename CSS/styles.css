@@ -51,7 +51,7 @@ body {
 .link-nav:hover, .link-nav:focus,
 .link-adr:hover, .link-adr:focus,
 .link-cont:hover, .link-cont:focus,
-.link-curent {
+.link-nav.current {
     color: var(--decoration-color);
 }
 
@@ -60,10 +60,10 @@ body {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;   
-    text-align: center;
     letter-spacing: 0.06em;
-    text-transform: uppercase;
     color: var(--main-white-color);
+    text-transform: uppercase;
+    text-align: center;
     background-color: #2F303A; /*щоб текст побачити*/  
 }
 
@@ -85,9 +85,6 @@ body {
     background-color: var(--decoration-color);
     color: var(--main-white-color);
 }
-.button:active {
-    background-color: #188CE8;
-}
 
 .list .button {
     font-weight: 500;
@@ -99,8 +96,8 @@ body {
 
 .list .button:hover,
 .list .button:focus {
-    background-color: var(--decoration-color);
     color: var(--main-white-color);
+    background-color: var(--decoration-color);
 }
 
 .list .button:active {
@@ -108,7 +105,6 @@ body {
 }
 
 .section-title {
-    /* font-weight: 700; */
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
@@ -116,10 +112,6 @@ body {
 }
 .title-hide {
     display: none;
-}
-
-.features {
-
 }
 
 .features .title {
@@ -140,9 +132,6 @@ body {
     color: var(--heading-text-color);
 }
 
-.team .text {
-    /* off */
-}
 /*====== adress  ======*/
 
 .site-adr {
@@ -160,6 +149,17 @@ body {
     text-decoration: none;
 }
 
+.list .project {
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--heading-text-color);
+}
+
+.list .categories {
+    font-size: 16px;
+    line-height: 1.88;
+}
 
 /*=======  footer  ======*/
 .page-footer {
