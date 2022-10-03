@@ -67,7 +67,7 @@ body {
     background-color: #2F303A; /*щоб текст побачити*/  
 }
 
-.button {
+.btn {
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
@@ -80,13 +80,13 @@ body {
     cursor: pointer;
 }
 
-.button:hover,
-.button:focus {
+.btn:hover,
+.btn:focus {
     background-color: var(--decoration-color);
     color: var(--main-white-color);
 }
 
-.list .button {
+.list .btn {
     font-weight: 500;
     line-height: 1.62;
     letter-spacing: 0.03em;
@@ -94,8 +94,8 @@ body {
     background-color: #F5F4FA;
 }
 
-.list .button:hover,
-.list .button:focus {
+.list .btn:hover,
+.list .btn:focus {
     color: var(--main-white-color);
     background-color: var(--decoration-color);
 }
